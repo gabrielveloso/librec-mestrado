@@ -52,10 +52,18 @@ public class RSTE extends SocialRecommender {
 	protected void buildModel() throws Exception {
 		
 		int maxTrustU = 0;
-		for (int u : trainMatrix.rows()) {
+		for (int u : socialMatrix.rows()) {
 			SparseVector tu = socialMatrix.row(u);
 			if(tu.size() > maxTrustU){
 				maxTrustU = tu.size();
+			}
+		}
+		
+		int maxRatingU = 0;
+		for (int u : trainMatrix.rows()) {
+			SparseVector ru = trainMatrix.row(u);
+			if(ru.size() > maxRatingU){
+				maxRatingU = ru.size();
 			}
 		}
 		
@@ -74,7 +82,17 @@ public class RSTE extends SocialRecommender {
 				
 				//vetor linha matriz confiança?
 				SparseVector tu = socialMatrix.row(u);
+				
+				
+				
 				alpha = 1 - (double)tu.size()/(double)maxTrustU;
+				
+				
+				//alpha = 0.7 - (double)trainMatrix.row(u).size()/(double)maxRatingU;
+				
+				String linha = tu.toString();
+				
+				
 				//array usuarios cofiaveis
 				int[] tks = tu.getIndex();
 				
@@ -134,12 +152,17 @@ public class RSTE extends SocialRecommender {
 			for (int u : socialMatrix.columns()) {
 
 				SparseVector bu = socialMatrix.column(u);
+				
 				for (int p : bu.getIndex()) {
 					if (p >= trainMatrix.numRows())
 						continue;
 
 					SparseVector pp = trainMatrix.row(p);
 					SparseVector tp = socialMatrix.row(p);
+					
+					alpha = 1 - (double)tp.size()/(double)maxTrustU;
+					//alpha = 0.7 - (double)trainMatrix.row(p).size()/(double)maxRatingU;
+					
 					int[] tps = tp.getIndex();
 
 					for (int j : pp.getIndex()) {
@@ -181,6 +204,13 @@ public class RSTE extends SocialRecommender {
 		double pred1 = DenseMatrix.rowMult(P, u, Q, j);
 		double sum = 0.0, ws = 0.0;
 		SparseVector tu = socialMatrix.row(u);
+		alpha = 1 - (double)tu.size()/(double)1750;
+		
+		try{
+		//alpha = 0.7 - (double)trainMatrix.row(u).size()/(double)1700;
+		}catch(Exception e){
+			int i = 0;
+		}
 
 		for (int k : tu.getIndex()) {
 			double tuk = tu.get(k);
