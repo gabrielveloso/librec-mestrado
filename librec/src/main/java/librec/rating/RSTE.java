@@ -40,18 +40,19 @@ import librec.intf.SocialRecommender;
 public class RSTE extends SocialRecommender {
 
 	private double alpha;
+	private double maxTrustU;
 
 	public RSTE(SparseMatrix trainMatrix, SparseMatrix testMatrix, int fold) {
 		super(trainMatrix, testMatrix, fold);
 
 		initByNorm = false;
 		alpha = cf.getDouble("RSTE.alpha");
+		maxTrustU = 0;
 	}
 
 	@Override
 	protected void buildModel() throws Exception {
 		
-		int maxTrustU = 0;
 		for (int u : socialMatrix.rows()) {
 			SparseVector tu = socialMatrix.row(u);
 			if(tu.size() > maxTrustU){
@@ -83,15 +84,16 @@ public class RSTE extends SocialRecommender {
 				//vetor linha matriz confiança?
 				SparseVector tu = socialMatrix.row(u);
 				
-				
-				
-				alpha = 1 - (double)tu.size()/(double)maxTrustU;
-				
-				
+				//alpha = 0.7 - (double)tu.size()/(double)maxTrustU;
 				//alpha = 0.7 - (double)trainMatrix.row(u).size()/(double)maxRatingU;
 				
-				String linha = tu.toString();
-				
+				double taxaTrust = (double)tu.size()/(double)maxTrustU;				
+				if(taxaTrust == 0){
+					taxaTrust = 1;
+				}else{
+					taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
+				}				
+				alpha = taxaTrust;
 				
 				//array usuarios cofiaveis
 				int[] tks = tu.getIndex();
@@ -160,8 +162,17 @@ public class RSTE extends SocialRecommender {
 					SparseVector pp = trainMatrix.row(p);
 					SparseVector tp = socialMatrix.row(p);
 					
-					alpha = 1 - (double)tp.size()/(double)maxTrustU;
+					//alpha = 0.7 - (double)tp.size()/(double)maxTrustU;
 					//alpha = 0.7 - (double)trainMatrix.row(p).size()/(double)maxRatingU;
+					
+					double taxaTrust = (double)tp.size()/(double)maxTrustU;				
+					if(taxaTrust == 0){
+						taxaTrust = 1;
+					}else{
+						taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
+					}				
+					alpha = taxaTrust;
+					
 					
 					int[] tps = tp.getIndex();
 
@@ -204,7 +215,15 @@ public class RSTE extends SocialRecommender {
 		double pred1 = DenseMatrix.rowMult(P, u, Q, j);
 		double sum = 0.0, ws = 0.0;
 		SparseVector tu = socialMatrix.row(u);
-		alpha = 1 - (double)tu.size()/(double)1750;
+		//alpha = 0.7 - (double)tu.size()/(double)1760;
+		
+		double taxaTrust = (double)tu.size()/(double)maxTrustU;				
+		if(taxaTrust == 0){
+			taxaTrust = 1;
+		}else{
+			taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
+		}				
+		alpha = taxaTrust;
 		
 		try{
 		//alpha = 0.7 - (double)trainMatrix.row(u).size()/(double)1700;
