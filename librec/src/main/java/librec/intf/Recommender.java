@@ -108,7 +108,7 @@ public abstract class Recommender implements Runnable {
 	protected double globalMean;
 
 	public enum Measure {
-		MAE, RMSE, NMAE, ASYMM, D5, D10, Pre5, Pre10, Rec5, Rec10, MAP, MRR, NDCG, AUC, TrainTime, TestTime
+		MAE, RMSE, NMAE, ASYMM, D5, D10, Pre5, Pre10, Rec5, Rec10, MAP, MRR, NDCG, AUC, TrainTime, TestTime, MAE1, MAE2, MAE3, RMSE1, RMSE2, RMSE3
 	}
 
 	/**
@@ -228,6 +228,7 @@ public abstract class Recommender implements Runnable {
 
 		if (fold > 0)
 			Logs.debug(evalInfo);
+			System.out.println(evalInfo);
 
 		if (cf.isOn("is.save.model"))
 			saveModel();
@@ -252,8 +253,12 @@ public abstract class Recommender implements Runnable {
 						measures.get(Measure.AUC), measures.get(Measure.MAP), measures.get(Measure.NDCG),
 						measures.get(Measure.MRR), numIgnore);
 		} else
-			evalInfo = String.format("%.3f,%.3f,%.3f,%.3f", measures.get(Measure.MAE), measures.get(Measure.RMSE),
-					measures.get(Measure.NMAE), measures.get(Measure.ASYMM));
+//			evalInfo = String.format("%.3f,%.3f,%.3f,%.3f", measures.get(Measure.MAE), measures.get(Measure.RMSE),
+//					measures.get(Measure.NMAE), measures.get(Measure.ASYMM));
+			evalInfo = String.format("%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f", measures.get(Measure.MAE), measures.get(Measure.RMSE),
+				measures.get(Measure.MAE1),measures.get(Measure.MAE2),measures.get(Measure.MAE3),
+				measures.get(Measure.RMSE1),measures.get(Measure.RMSE2),measures.get(Measure.RMSE3),
+				measures.get(Measure.NMAE), measures.get(Measure.ASYMM));
 
 		return evalInfo;
 	}
@@ -397,6 +402,9 @@ public abstract class Recommender implements Runnable {
 	 * 
 	 */
 	protected boolean isTestable(int u, int j) {
+		if(u == 32424){
+			int i = 0;
+		}
 		switch (view) {
 		case "cold-start":
 			return trainMatrix.rowSize(u) < 5 ? true : false;
@@ -414,24 +422,45 @@ public abstract class Recommender implements Runnable {
 		Map<Measure, Double> measures = new HashMap<>();
 
 		double sum_maes = 0, sum_mses = 0, sum_asyms = 0;
+		double sum_maes1 = 0, sum_maes2 = 0, sum_maes3 = 0;
+		double sum_mses1 = 0, sum_mses2 = 0, sum_mses3 = 0;
 		int numCount = 0;
+		int numCount1 = 0;
+		int numCount2 = 0;
+		int numCount3 = 0;
 		for (MatrixEntry me : testMatrix) {
 			double rate = me.get();
 			if (rate <= 0)
 				continue;
 
 			int u = me.row();
-			int j = me.column();
+			int j = me.column();			
 
 			if (!isTestable(u, j))
 				continue;
+			
+			int numRatings = testMatrix.row(u).size();
 
 			double pred = predict(u, j, true);
 			if (Double.isNaN(pred))
 				continue;
 
 			double err = rate - pred;
-
+			
+			if(numRatings <= 10){
+				sum_maes1+= Math.abs(err);
+				sum_mses1 += err * err;
+				numCount1++;
+			}else if(numRatings >  10 && numRatings <= 100){
+				sum_maes2+= Math.abs(err);
+				sum_mses2 += err * err;
+				numCount2++;
+			}else if(numRatings >  100){
+				sum_maes3+= Math.abs(err);
+				sum_mses3 += err * err;
+				numCount3++;
+			}
+				
 			sum_maes += Math.abs(err);
 			sum_mses += err * err;
 			sum_asyms += Measures.ASYMMLoss(rate, pred, minRate, maxRate);
@@ -441,7 +470,20 @@ public abstract class Recommender implements Runnable {
 		double mae = sum_maes / numCount;
 		double rmse = Math.sqrt(sum_mses / numCount);
 		double asymm = sum_asyms / numCount;
-
+		
+		double mae1 = sum_maes1 / numCount1;
+		double rmse1 = Math.sqrt(sum_mses1 / numCount1);
+		double mae2 = sum_maes2 / numCount2;
+		double rmse2 = Math.sqrt(sum_mses2 / numCount2);
+		double mae3 = sum_maes3 / numCount3;
+		double rmse3 = Math.sqrt(sum_mses3 / numCount3);
+		
+		measures.put(Measure.MAE1, mae1);
+		measures.put(Measure.MAE2, mae2);
+		measures.put(Measure.MAE3, mae3);
+		measures.put(Measure.RMSE1, rmse1);
+		measures.put(Measure.RMSE2, rmse2);
+		measures.put(Measure.RMSE3, rmse3);
 		measures.put(Measure.MAE, mae);
 		// normalized MAE: useful for direct comparison between two systems
 		// using different rating scales.

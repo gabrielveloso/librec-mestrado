@@ -129,6 +129,7 @@ public abstract class IterativeRecommender extends Recommender {
 			Logs.debug("{}{} iter {}: errs = {}, delta_errs = {}, loss = {}, delta_loss = {}, learn_rate = {}",
 					new Object[] { algoName, foldInfo, iter, (float) errs, (float) (last_errs - errs), (float) loss,
 							(float) (Math.abs(last_loss) - Math.abs(loss)), (float) lRate });
+			System.out.println(iter + " " + (float) errs);
 		}
 
 		if (!(isBoldDriver && isUndoEnabled) && Double.isNaN(loss)) {

@@ -87,13 +87,13 @@ public class RSTE extends SocialRecommender {
 				//alpha = 0.7 - (double)tu.size()/(double)maxTrustU;
 				//alpha = 0.7 - (double)trainMatrix.row(u).size()/(double)maxRatingU;
 				
-				double taxaTrust = (double)tu.size()/(double)maxTrustU;				
-				if(taxaTrust == 0){
-					taxaTrust = 1;
-				}else{
-					taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
-				}				
-				alpha = taxaTrust;
+//				double taxaTrust = (double)tu.size()/(double)maxTrustU;				
+//				if(taxaTrust == 0){
+//					alpha = 1;
+//				}else{
+//					alpha = Math.abs(Math.log(taxaTrust))/Math.log(10000);
+//				}				
+
 				
 				//array usuarios cofiaveis
 				int[] tks = tu.getIndex();
@@ -165,13 +165,13 @@ public class RSTE extends SocialRecommender {
 					//alpha = 0.7 - (double)tp.size()/(double)maxTrustU;
 					//alpha = 0.7 - (double)trainMatrix.row(p).size()/(double)maxRatingU;
 					
-					double taxaTrust = (double)tp.size()/(double)maxTrustU;				
-					if(taxaTrust == 0){
-						taxaTrust = 1;
-					}else{
-						taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
-					}				
-					alpha = taxaTrust;
+//					double taxaTrust = (double)tp.size()/(double)maxTrustU;				
+//					if(taxaTrust == 0){
+//						taxaTrust = 1;
+//					}else{
+//						taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
+//					}				
+//					alpha = taxaTrust;
 					
 					
 					int[] tps = tp.getIndex();
@@ -217,13 +217,13 @@ public class RSTE extends SocialRecommender {
 		SparseVector tu = socialMatrix.row(u);
 		//alpha = 0.7 - (double)tu.size()/(double)1760;
 		
-		double taxaTrust = (double)tu.size()/(double)maxTrustU;				
-		if(taxaTrust == 0){
-			taxaTrust = 1;
-		}else{
-			taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
-		}				
-		alpha = taxaTrust;
+//		double taxaTrust = (double)tu.size()/(double)maxTrustU;				
+//		if(taxaTrust == 0){
+//			taxaTrust = 1;
+//		}else{
+//			taxaTrust = Math.abs(Math.log(taxaTrust))/Math.log(10000);
+//		}				
+//		alpha = taxaTrust;
 		
 		try{
 		//alpha = 0.7 - (double)trainMatrix.row(u).size()/(double)1700;
