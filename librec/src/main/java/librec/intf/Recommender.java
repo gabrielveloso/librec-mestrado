@@ -438,8 +438,16 @@ public abstract class Recommender implements Runnable {
 
 			if (!isTestable(u, j))
 				continue;
+			int numRatingsTrain =0;
+			int numRatings = testMatrix.rowSize(u);
+			try{
+				numRatingsTrain = trainMatrix.rowSize(u);
+			}catch(Exception e){
+				int i= 0;
+				i++;
+			}
 			
-			int numRatings = testMatrix.row(u).size();
+			numRatings = numRatings + numRatingsTrain;
 
 			double pred = predict(u, j, true);
 			if (Double.isNaN(pred))
