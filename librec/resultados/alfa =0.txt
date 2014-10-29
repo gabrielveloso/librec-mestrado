@@ -1,0 +1,408 @@
+conjunto 1
+
+[DEBUG] 
+LibRec 1.2 Copyright (C) 2014 Guibing Guo 
+
+LibRec is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, 
+or (at your option) any later version. 
+
+LibRec is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License 
+along with LibRec. If not, see <http://www.gnu.org/licenses/>.
+[INFO ] Training: ...c\dadosTreinamento\treinamento1.txt, Testing:: ...brec\dadosTreinamento\conjunto1.txt.
+[DEBUG] User amount: 39321, item amount: 131690
+[DEBUG] Rate amount: 598342, scales: {1.0, 2.0, 3.0, 4.0, 5.0}
+[DEBUG] User amount: 40163, item amount: 139738
+[DEBUG] Rate amount: 66482, scales: {1.0, 2.0, 3.0, 4.0, 5.0}
+[DEBUG] Social dataset: ...rec\dadosTreinamento\trust_data.txt
+[DEBUG] User amount: 49289, scales: {1.0}
+[DEBUG] RSTE: 0.001,0.001,0.001,10,50,false,0.0
+[DEBUG] RSTE iter 1: errs = 37252.29, delta_errs = -37252.29, loss = 39243.65, delta_loss = -39243.65, learn_rate = 0.001
+1 37252.29
+[DEBUG] RSTE iter 2: errs = 34839.25, delta_errs = 2413.0408, loss = 36749.62, delta_loss = 2494.0266, learn_rate = 0.001
+2 34839.25
+[DEBUG] RSTE iter 3: errs = 33153.117, delta_errs = 1686.1329, loss = 35013.875, delta_loss = 1735.7456, learn_rate = 0.001
+3 33153.117
+[DEBUG] RSTE iter 4: errs = 32869.66, delta_errs = 283.45416, loss = 34711.77, delta_loss = 302.1031, learn_rate = 0.001
+4 32869.66
+[DEBUG] RSTE iter 5: errs = 32492.62, delta_errs = 377.04123, loss = 34323.348, delta_loss = 388.42493, learn_rate = 0.001
+5 32492.62
+[DEBUG] RSTE iter 6: errs = 32374.729, delta_errs = 117.89136, loss = 34193.22, delta_loss = 130.12766, learn_rate = 0.001
+6 32374.729
+[DEBUG] RSTE iter 7: errs = 32068.22, delta_errs = 306.50858, loss = 33878.582, delta_loss = 314.6359, learn_rate = 0.001
+7 32068.22
+[DEBUG] RSTE iter 8: errs = 31924.06, delta_errs = 144.16014, loss = 33724.953, delta_loss = 153.63165, learn_rate = 0.001
+8 31924.06
+[DEBUG] RSTE iter 9: errs = 31691.084, delta_errs = 232.9751, loss = 33485.727, delta_loss = 239.22322, learn_rate = 0.001
+9 31691.084
+[DEBUG] RSTE iter 10: errs = 31560.402, delta_errs = 130.6814, loss = 33347.918, delta_loss = 137.81139, learn_rate = 0.001
+10 31560.402
+[DEBUG] RSTE iter 11: errs = 31394.58, delta_errs = 165.82292, loss = 33177.273, delta_loss = 170.64145, learn_rate = 0.001
+11 31394.58
+[DEBUG] RSTE iter 12: errs = 31286.05, delta_errs = 108.53022, loss = 33063.4, delta_loss = 113.87771, learn_rate = 0.001
+12 31286.05
+[DEBUG] RSTE iter 13: errs = 31164.06, delta_errs = 121.99047, loss = 32937.617, delta_loss = 125.77982, learn_rate = 0.001
+13 31164.06
+[DEBUG] RSTE iter 14: errs = 31073.357, delta_errs = 90.70182, loss = 32842.85, delta_loss = 94.76807, learn_rate = 0.001
+14 31073.357
+[DEBUG] RSTE iter 15: errs = 30978.465, delta_errs = 94.892204, loss = 32744.916, delta_loss = 97.9332, learn_rate = 0.001
+15 30978.465
+[DEBUG] RSTE iter 16: errs = 30901.11, delta_errs = 77.35682, loss = 32664.412, delta_loss = 80.50395, learn_rate = 0.001
+16 30901.11
+[DEBUG] RSTE iter 17: errs = 30823.404, delta_errs = 77.704575, loss = 32584.232, delta_loss = 80.17991, learn_rate = 0.001
+17 30823.404
+[DEBUG] RSTE iter 18: errs = 30755.816, delta_errs = 67.58842, loss = 32514.166, delta_loss = 70.065834, learn_rate = 0.001
+18 30755.816
+[DEBUG] RSTE iter 19: errs = 30689.346, delta_errs = 66.47071, loss = 32445.664, delta_loss = 68.50345, learn_rate = 0.001
+19 30689.346
+[DEBUG] RSTE iter 20: errs = 30629.025, delta_errs = 60.31913, loss = 32383.365, delta_loss = 62.297585, learn_rate = 0.001
+20 30629.025
+[DEBUG] RSTE iter 21: errs = 30570.334, delta_errs = 58.692474, loss = 32322.996, delta_loss = 60.369587, learn_rate = 0.001
+21 30570.334
+[DEBUG] RSTE iter 22: errs = 30515.664, delta_errs = 54.67029, loss = 32266.729, delta_loss = 56.26733, learn_rate = 0.001
+22 30515.664
+[DEBUG] RSTE iter 23: errs = 30462.723, delta_errs = 52.941513, loss = 32212.402, delta_loss = 54.327087, learn_rate = 0.001
+23 30462.723
+[DEBUG] RSTE iter 24: errs = 30412.615, delta_errs = 50.106644, loss = 32160.998, delta_loss = 51.404247, learn_rate = 0.001
+24 30412.615
+[DEBUG] RSTE iter 25: errs = 30364.162, delta_errs = 48.453617, loss = 32111.4, delta_loss = 49.59642, learn_rate = 0.001
+25 30364.162
+[DEBUG] RSTE iter 26: errs = 30317.842, delta_errs = 46.320103, loss = 32064.025, delta_loss = 47.376526, learn_rate = 0.001
+26 30317.842
+[DEBUG] RSTE iter 27: errs = 30273.03, delta_errs = 44.812546, loss = 32018.273, delta_loss = 45.750538, learn_rate = 0.001
+27 30273.03
+[DEBUG] RSTE iter 28: errs = 30229.906, delta_errs = 43.12203, loss = 31974.295, delta_loss = 43.979614, learn_rate = 0.001
+28 30229.906
+[DEBUG] RSTE iter 29: errs = 30188.129, delta_errs = 41.77721, loss = 31931.754, delta_loss = 42.54041, learn_rate = 0.001
+29 30188.129
+[DEBUG] RSTE iter 30: errs = 30147.744, delta_errs = 40.38606, loss = 31890.678, delta_loss = 41.07638, learn_rate = 0.001
+30 30147.744
+[DEBUG] RSTE iter 31: errs = 30108.547, delta_errs = 39.197258, loss = 31850.867, delta_loss = 39.809742, learn_rate = 0.001
+31 30108.547
+[DEBUG] RSTE iter 32: errs = 30070.525, delta_errs = 38.0211, loss = 31812.299, delta_loss = 38.568363, learn_rate = 0.001
+32 30070.525
+[DEBUG] RSTE iter 33: errs = 30033.553, delta_errs = 36.97212, loss = 31774.846, delta_loss = 37.453484, learn_rate = 0.001
+33 30033.553
+[DEBUG] RSTE iter 34: errs = 29997.596, delta_errs = 35.958187, loss = 31738.465, delta_loss = 36.381474, learn_rate = 0.001
+34 29997.596
+[DEBUG] RSTE iter 35: errs = 29962.564, delta_errs = 35.030407, loss = 31703.068, delta_loss = 35.396824, learn_rate = 0.001
+35 29962.564
+[DEBUG] RSTE iter 36: errs = 29928.422, delta_errs = 34.143486, loss = 31668.61, delta_loss = 34.458244, learn_rate = 0.001
+36 29928.422
+[DEBUG] RSTE iter 37: errs = 29895.102, delta_errs = 33.319046, loss = 31635.025, delta_loss = 33.584072, learn_rate = 0.001
+37 29895.102
+[DEBUG] RSTE iter 38: errs = 29862.568, delta_errs = 32.534264, loss = 31602.271, delta_loss = 32.753304, learn_rate = 0.001
+38 29862.568
+[DEBUG] RSTE iter 39: errs = 29830.77, delta_errs = 31.797388, loss = 31570.299, delta_loss = 31.972544, learn_rate = 0.001
+39 29830.77
+[DEBUG] RSTE iter 40: errs = 29799.674, delta_errs = 31.09646, loss = 31539.068, delta_loss = 31.230618, learn_rate = 0.001
+40 29799.674
+[DEBUG] RSTE iter 41: errs = 29769.24, delta_errs = 30.433905, loss = 31508.54, delta_loss = 30.529106, learn_rate = 0.001
+41 29769.24
+[DEBUG] RSTE iter 42: errs = 29739.438, delta_errs = 29.80312, loss = 31478.678, delta_loss = 29.861706, learn_rate = 0.001
+42 29739.438
+[DEBUG] RSTE iter 43: errs = 29710.232, delta_errs = 29.204168, loss = 31449.45, delta_loss = 29.228037, learn_rate = 0.001
+43 29710.232
+[DEBUG] RSTE iter 44: errs = 29681.6, delta_errs = 28.63318, loss = 31420.826, delta_loss = 28.624306, learn_rate = 0.001
+44 29681.6
+[DEBUG] RSTE iter 45: errs = 29653.51, delta_errs = 28.089397, loss = 31392.775, delta_loss = 28.049494, learn_rate = 0.001
+45 29653.51
+[DEBUG] RSTE iter 46: errs = 29625.94, delta_errs = 27.570395, loss = 31365.275, delta_loss = 27.501163, learn_rate = 0.001
+46 29625.94
+[DEBUG] RSTE iter 47: errs = 29598.865, delta_errs = 27.075212, loss = 31338.297, delta_loss = 26.978195, learn_rate = 0.001
+47 29598.865
+[DEBUG] RSTE iter 48: errs = 29572.262, delta_errs = 26.602222, loss = 31311.818, delta_loss = 26.4789, learn_rate = 0.001
+48 29572.262
+[DEBUG] RSTE iter 49: errs = 29546.111, delta_errs = 26.150482, loss = 31285.816, delta_loss = 26.00223, learn_rate = 0.001
+49 29546.111
+[DEBUG] RSTE iter 50: errs = 29520.393, delta_errs = 25.718792, loss = 31260.27, delta_loss = 25.546915, learn_rate = 0.001
+50 29520.393
+[DEBUG] RSTE evaluate test data ... 
+QTD Ratings menores que 10 9488
+QTD Ratings maiores que 10 e menotes que 100 39465
+QTD Ratings maiores que 100 17529
+RSTE: 0,992,1,261,1,132,0,995,0,908,1,400,1,271,1,155,0,248,0,978	Time: 03:53:50, 00:00	View: all
+[DEBUG] Learned models are saved to folder "Results\RSTE\"
+[INFO ] RSTE,0,992,1,261,1,132,0,995,0,908,1,400,1,271,1,155,0,248,0,978,0.001,0.001,0.001,10,50,false,0.0,03:53:50,00:00
+
+conjunto 2
+
+Training: ...c\dadosTreinamento\treinamento2.txt, Testing:: ...brec\dadosTreinamento\conjunto2.txt.
+RSTE,0,988,1,257,1,138,0,991,0,903,1,411,1,264,1,148,0,247,0,974,0.001,0.001,0.001,10,50,false,0.0,04:38:59,00:00
+
+conjunto 3
+[DEBUG] 
+LibRec 1.2 Copyright (C) 2014 Guibing Guo 
+
+LibRec is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, 
+or (at your option) any later version. 
+
+LibRec is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License 
+along with LibRec. If not, see <http://www.gnu.org/licenses/>.
+[INFO ] Training: ...c\dadosTreinamento\treinamento3.txt, Testing:: ...brec\dadosTreinamento\conjunto3.txt.
+[DEBUG] User amount: 39380, item amount: 131597
+[DEBUG] Rate amount: 598342, scales: {1.0, 2.0, 3.0, 4.0, 5.0}
+[DEBUG] User amount: 40163, item amount: 139738
+[DEBUG] Rate amount: 66482, scales: {1.0, 2.0, 3.0, 4.0, 5.0}
+[DEBUG] Social dataset: ...rec\dadosTreinamento\trust_data.txt
+[DEBUG] User amount: 49289, scales: {1.0}
+[DEBUG] RSTE: 0.001,0.001,0.001,10,50,false,0.0
+[DEBUG] RSTE iter 1: errs = 37263.02, delta_errs = -37263.02, loss = 39261.47, delta_loss = -39261.47, learn_rate = 0.001
+1 37263.02
+[DEBUG] RSTE iter 2: errs = 34844.59, delta_errs = 2418.4285, loss = 36762.367, delta_loss = 2499.1016, learn_rate = 0.001
+2 34844.59
+[DEBUG] RSTE iter 3: errs = 33216.74, delta_errs = 1627.8511, loss = 35085.6, delta_loss = 1676.7654, learn_rate = 0.001
+3 33216.74
+[DEBUG] RSTE iter 4: errs = 32939.316, delta_errs = 277.42276, loss = 34789.844, delta_loss = 295.7549, learn_rate = 0.001
+4 32939.316
+[DEBUG] RSTE iter 5: errs = 32569.535, delta_errs = 369.7819, loss = 34408.55, delta_loss = 381.29324, learn_rate = 0.001
+5 32569.535
+[DEBUG] RSTE iter 6: errs = 32446.121, delta_errs = 123.41457, loss = 34272.945, delta_loss = 135.60599, learn_rate = 0.001
+6 32446.121
+[DEBUG] RSTE iter 7: errs = 32152.43, delta_errs = 293.6904, loss = 33970.984, delta_loss = 301.95963, learn_rate = 0.001
+7 32152.43
+[DEBUG] RSTE iter 8: errs = 32009.547, delta_errs = 142.88432, loss = 33818.727, delta_loss = 152.25928, learn_rate = 0.001
+8 32009.547
+[DEBUG] RSTE iter 9: errs = 31786.941, delta_errs = 222.60555, loss = 33589.79, delta_loss = 228.93764, learn_rate = 0.001
+9 31786.941
+[DEBUG] RSTE iter 10: errs = 31659.77, delta_errs = 127.17131, loss = 33455.57, delta_loss = 134.21732, learn_rate = 0.001
+10 31659.77
+[DEBUG] RSTE iter 11: errs = 31501.945, delta_errs = 157.82477, loss = 33292.867, delta_loss = 162.70517, learn_rate = 0.001
+11 31501.945
+[DEBUG] RSTE iter 12: errs = 31398.092, delta_errs = 103.85245, loss = 33183.71, delta_loss = 109.157234, learn_rate = 0.001
+12 31398.092
+[DEBUG] RSTE iter 13: errs = 31282.467, delta_errs = 115.62434, loss = 33064.234, delta_loss = 119.474365, learn_rate = 0.001
+13 31282.467
+[DEBUG] RSTE iter 14: errs = 31195.86, delta_errs = 86.60886, loss = 32973.56, delta_loss = 90.676674, learn_rate = 0.001
+14 31195.86
+[DEBUG] RSTE iter 15: errs = 31105.19, delta_errs = 90.67037, loss = 32879.777, delta_loss = 93.77981, learn_rate = 0.001
+15 31105.19
+[DEBUG] RSTE iter 16: errs = 31030.4, delta_errs = 74.78783, loss = 32801.805, delta_loss = 77.97231, learn_rate = 0.001
+16 31030.4
+[DEBUG] RSTE iter 17: errs = 30954.799, delta_errs = 75.60225, loss = 32723.65, delta_loss = 78.1554, learn_rate = 0.001
+17 30954.799
+[DEBUG] RSTE iter 18: errs = 30888.092, delta_errs = 66.70711, loss = 32654.404, delta_loss = 69.24716, learn_rate = 0.001
+18 30888.092
+[DEBUG] RSTE iter 19: errs = 30821.867, delta_errs = 66.223885, loss = 32586.06, delta_loss = 68.342575, learn_rate = 0.001
+19 30821.867
+[DEBUG] RSTE iter 20: errs = 30760.87, delta_errs = 60.99761, loss = 32523.006, delta_loss = 63.05498, learn_rate = 0.001
+20 30760.87
+[DEBUG] RSTE iter 21: errs = 30700.879, delta_errs = 59.990017, loss = 32461.248, delta_loss = 61.758633, learn_rate = 0.001
+21 30700.879
+[DEBUG] RSTE iter 22: errs = 30644.209, delta_errs = 56.67128, loss = 32402.89, delta_loss = 58.356266, learn_rate = 0.001
+22 30644.209
+[DEBUG] RSTE iter 23: errs = 30588.742, delta_errs = 55.465763, loss = 32345.945, delta_loss = 56.94521, learn_rate = 0.001
+23 30588.742
+[DEBUG] RSTE iter 24: errs = 30535.596, delta_errs = 53.14737, loss = 32291.41, delta_loss = 54.53628, learn_rate = 0.001
+24 30535.596
+[DEBUG] RSTE iter 25: errs = 30483.707, delta_errs = 51.887417, loss = 32238.287, delta_loss = 53.123306, learn_rate = 0.001
+25 30483.707
+[DEBUG] RSTE iter 26: errs = 30433.605, delta_errs = 50.10243, loss = 32187.037, delta_loss = 51.24926, learn_rate = 0.001
+26 30433.605
+[DEBUG] RSTE iter 27: errs = 30384.756, delta_errs = 48.84888, loss = 32137.16, delta_loss = 49.87651, learn_rate = 0.001
+27 30384.756
+[DEBUG] RSTE iter 28: errs = 30337.4, delta_errs = 47.356693, loss = 32088.86, delta_loss = 48.30084, learn_rate = 0.001
+28 30337.4
+[DEBUG] RSTE iter 29: errs = 30291.264, delta_errs = 46.135414, loss = 32041.877, delta_loss = 46.98294, learn_rate = 0.001
+29 30291.264
+[DEBUG] RSTE iter 30: errs = 30246.45, delta_errs = 44.81527, loss = 31996.291, delta_loss = 45.586544, learn_rate = 0.001
+30 30246.45
+[DEBUG] RSTE iter 31: errs = 30202.809, delta_errs = 43.640392, loss = 31951.959, delta_loss = 44.3309, learn_rate = 0.001
+31 30202.809
+[DEBUG] RSTE iter 32: errs = 30160.373, delta_errs = 42.436157, loss = 31908.902, delta_loss = 43.05802, learn_rate = 0.001
+32 30160.373
+[DEBUG] RSTE iter 33: errs = 30119.053, delta_errs = 41.319065, loss = 31867.03, delta_loss = 41.871925, learn_rate = 0.001
+33 30119.053
+[DEBUG] RSTE iter 34: errs = 30078.846, delta_errs = 40.208157, loss = 31826.33, delta_loss = 40.699715, learn_rate = 0.001
+34 30078.846
+[DEBUG] RSTE iter 35: errs = 30039.688, delta_errs = 39.158707, loss = 31786.74, delta_loss = 39.590454, learn_rate = 0.001
+35 30039.688
+[DEBUG] RSTE iter 36: errs = 30001.553, delta_errs = 38.133648, loss = 31748.229, delta_loss = 38.510868, learn_rate = 0.001
+36 30001.553
+[DEBUG] RSTE iter 37: errs = 29964.395, delta_errs = 37.158733, loss = 31710.744, delta_loss = 37.483635, learn_rate = 0.001
+37 29964.395
+[DEBUG] RSTE iter 38: errs = 29928.178, delta_errs = 36.216846, loss = 31674.252, delta_loss = 36.493332, learn_rate = 0.001
+38 29928.178
+[DEBUG] RSTE iter 39: errs = 29892.857, delta_errs = 35.319405, loss = 31638.701, delta_loss = 35.54984, learn_rate = 0.001
+39 29892.857
+[DEBUG] RSTE iter 40: errs = 29858.4, delta_errs = 34.45807, loss = 31604.057, delta_loss = 34.645527, learn_rate = 0.001
+40 29858.4
+[DEBUG] RSTE iter 41: errs = 29824.764, delta_errs = 33.637318, loss = 31570.271, delta_loss = 33.784073, learn_rate = 0.001
+41 29824.764
+[DEBUG] RSTE iter 42: errs = 29791.91, delta_errs = 32.852615, loss = 31537.31, delta_loss = 32.961197, learn_rate = 0.001
+42 29791.91
+[DEBUG] RSTE iter 43: errs = 29759.805, delta_errs = 32.105145, loss = 31505.133, delta_loss = 32.17763, learn_rate = 0.001
+43 29759.805
+[DEBUG] RSTE iter 44: errs = 29728.412, delta_errs = 31.392036, loss = 31473.703, delta_loss = 31.430565, learn_rate = 0.001
+44 29728.412
+[DEBUG] RSTE iter 45: errs = 29697.7, delta_errs = 30.712969, loss = 31442.984, delta_loss = 30.719404, learn_rate = 0.001
+45 29697.7
+[DEBUG] RSTE iter 46: errs = 29667.635, delta_errs = 30.06584, loss = 31412.941, delta_loss = 30.042013, learn_rate = 0.001
+46 29667.635
+[DEBUG] RSTE iter 47: errs = 29638.184, delta_errs = 29.449694, loss = 31383.545, delta_loss = 29.397259, learn_rate = 0.001
+47 29638.184
+[DEBUG] RSTE iter 48: errs = 29609.322, delta_errs = 28.862806, loss = 31354.762, delta_loss = 28.783346, learn_rate = 0.001
+48 29609.322
+[DEBUG] RSTE iter 49: errs = 29581.018, delta_errs = 28.303984, loss = 31326.562, delta_loss = 28.198954, learn_rate = 0.001
+49 29581.018
+[DEBUG] RSTE iter 50: errs = 29553.246, delta_errs = 27.771715, loss = 31298.92, delta_loss = 27.642488, learn_rate = 0.001
+50 29553.246
+[DEBUG] RSTE evaluate test data ... 
+QTD Ratings menores que 10 9430
+QTD Ratings maiores que 10 e menotes que 100 39504
+QTD Ratings maiores que 100 17548
+RSTE: 0,989,1,257,1,127,0,993,0,904,1,398,1,266,1,151,0,247,0,972	Time: 04:44:55, 00:00	View: all
+[DEBUG] Learned models are saved to folder "Results\RSTE\"
+[INFO ] RSTE,0,989,1,257,1,127,0,993,0,904,1,398,1,266,1,151,0,247,0,972,0.001,0.001,0.001,10,50,false,0.0,04:44:55,00:00
+
+conjunto 4
+
+[DEBUG] 
+LibRec 1.2 Copyright (C) 2014 Guibing Guo 
+
+LibRec is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, 
+or (at your option) any later version. 
+
+LibRec is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License 
+along with LibRec. If not, see <http://www.gnu.org/licenses/>.
+[INFO ] Training: ...c\dadosTreinamento\treinamento4.txt, Testing:: ...brec\dadosTreinamento\conjunto4.txt.
+[DEBUG] User amount: 39347, item amount: 131551
+[DEBUG] Rate amount: 598342, scales: {1.0, 2.0, 3.0, 4.0, 5.0}
+[DEBUG] User amount: 40163, item amount: 139738
+[DEBUG] Rate amount: 66482, scales: {1.0, 2.0, 3.0, 4.0, 5.0}
+[DEBUG] Social dataset: ...rec\dadosTreinamento\trust_data.txt
+[DEBUG] User amount: 49289, scales: {1.0}
+[DEBUG] RSTE: 0.001,0.001,0.001,10,50,false,0.0
+[DEBUG] RSTE iter 1: errs = 37208.777, delta_errs = -37208.777, loss = 39202.656, delta_loss = -39202.656, learn_rate = 0.001
+1 37208.777
+[DEBUG] RSTE iter 2: errs = 34799.3, delta_errs = 2409.4788, loss = 36711.883, delta_loss = 2490.7754, learn_rate = 0.001
+2 34799.3
+[DEBUG] RSTE iter 3: errs = 33135.406, delta_errs = 1663.8926, loss = 34998.258, delta_loss = 1713.6233, learn_rate = 0.001
+3 33135.406
+[DEBUG] RSTE iter 4: errs = 32838.277, delta_errs = 297.12772, loss = 34682.254, delta_loss = 316.00568, learn_rate = 0.001
+4 32838.277
+[DEBUG] RSTE iter 5: errs = 32460.48, delta_errs = 377.79868, loss = 34292.715, delta_loss = 389.53806, learn_rate = 0.001
+5 32460.48
+[DEBUG] RSTE iter 6: errs = 32333.48, delta_errs = 126.99945, loss = 34153.21, delta_loss = 139.50557, learn_rate = 0.001
+6 32333.48
+[DEBUG] RSTE iter 7: errs = 32032.94, delta_errs = 300.54193, loss = 33844.2, delta_loss = 309.0104, learn_rate = 0.001
+7 32032.94
+[DEBUG] RSTE iter 8: errs = 31883.564, delta_errs = 149.37334, loss = 33685.137, delta_loss = 159.06407, learn_rate = 0.001
+8 31883.564
+[DEBUG] RSTE iter 9: errs = 31651.695, delta_errs = 231.86916, loss = 33446.707, delta_loss = 238.42827, learn_rate = 0.001
+9 31651.695
+[DEBUG] RSTE iter 10: errs = 31514.129, delta_errs = 137.56647, loss = 33301.812, delta_loss = 144.8951, learn_rate = 0.001
+10 31514.129
+[DEBUG] RSTE iter 11: errs = 31344.834, delta_errs = 169.2964, loss = 33127.43, delta_loss = 174.38237, learn_rate = 0.001
+11 31344.834
+[DEBUG] RSTE iter 12: errs = 31229.27, delta_errs = 115.564476, loss = 33006.35, delta_loss = 121.07769, learn_rate = 0.001
+12 31229.27
+[DEBUG] RSTE iter 13: errs = 31102.938, delta_errs = 126.33182, loss = 32876.027, delta_loss = 130.32623, learn_rate = 0.001
+13 31102.938
+[DEBUG] RSTE iter 14: errs = 31006.6, delta_errs = 96.33805, loss = 32775.5, delta_loss = 100.52489, learn_rate = 0.001
+14 31006.6
+[DEBUG] RSTE iter 15: errs = 30908.227, delta_errs = 98.37173, loss = 32673.947, delta_loss = 101.553215, learn_rate = 0.001
+15 30908.227
+[DEBUG] RSTE iter 16: errs = 30827.219, delta_errs = 81.00757, loss = 32589.717, delta_loss = 84.23162, learn_rate = 0.001
+16 30827.219
+[DEBUG] RSTE iter 17: errs = 30747.504, delta_errs = 79.7152, loss = 32507.438, delta_loss = 82.27779, learn_rate = 0.001
+17 30747.504
+[DEBUG] RSTE iter 18: errs = 30678.1, delta_errs = 69.404205, loss = 32435.514, delta_loss = 71.925415, learn_rate = 0.001
+18 30678.1
+[DEBUG] RSTE iter 19: errs = 30610.893, delta_errs = 67.20769, loss = 32366.223, delta_loss = 69.290504, learn_rate = 0.001
+19 30610.893
+[DEBUG] RSTE iter 20: errs = 30550.04, delta_errs = 60.853504, loss = 32303.367, delta_loss = 62.854477, learn_rate = 0.001
+20 30550.04
+[DEBUG] RSTE iter 21: errs = 30491.443, delta_errs = 58.5952, loss = 32243.068, delta_loss = 60.299007, learn_rate = 0.001
+21 30491.443
+[DEBUG] RSTE iter 22: errs = 30437.002, delta_errs = 54.441185, loss = 32187.021, delta_loss = 56.048264, learn_rate = 0.001
+22 30437.002
+[DEBUG] RSTE iter 23: errs = 30384.637, delta_errs = 52.365093, loss = 32133.258, delta_loss = 53.763416, learn_rate = 0.001
+23 30384.637
+[DEBUG] RSTE iter 24: errs = 30335.186, delta_errs = 49.452595, loss = 32082.504, delta_loss = 50.75324, learn_rate = 0.001
+24 30335.186
+[DEBUG] RSTE iter 25: errs = 30287.576, delta_errs = 47.609657, loss = 32033.746, delta_loss = 48.75723, learn_rate = 0.001
+25 30287.576
+[DEBUG] RSTE iter 26: errs = 30242.148, delta_errs = 45.426174, loss = 31987.266, delta_loss = 46.48196, learn_rate = 0.001
+26 30242.148
+[DEBUG] RSTE iter 27: errs = 30198.34, delta_errs = 43.80935, loss = 31942.518, delta_loss = 44.747902, learn_rate = 0.001
+27 30198.34
+[DEBUG] RSTE iter 28: errs = 30156.26, delta_errs = 42.08076, loss = 31899.58, delta_loss = 42.936188, learn_rate = 0.001
+28 30156.26
+[DEBUG] RSTE iter 29: errs = 30115.592, delta_errs = 40.66721, loss = 31858.15, delta_loss = 41.42928, learn_rate = 0.001
+29 30115.592
+[DEBUG] RSTE iter 30: errs = 30076.348, delta_errs = 39.24371, loss = 31818.219, delta_loss = 39.931896, learn_rate = 0.001
+30 30076.348
+[DEBUG] RSTE iter 31: errs = 30038.34, delta_errs = 38.00779, loss = 31779.6, delta_loss = 38.619255, learn_rate = 0.001
+31 30038.34
+[DEBUG] RSTE iter 32: errs = 30001.537, delta_errs = 36.803925, loss = 31742.25, delta_loss = 37.35028, learn_rate = 0.001
+32 30001.537
+[DEBUG] RSTE iter 33: errs = 29965.814, delta_errs = 35.72138, loss = 31706.047, delta_loss = 36.20315, learn_rate = 0.001
+33 29965.814
+[DEBUG] RSTE iter 34: errs = 29931.129, delta_errs = 34.68529, loss = 31670.938, delta_loss = 35.109856, learn_rate = 0.001
+34 29931.129
+[DEBUG] RSTE iter 35: errs = 29897.395, delta_errs = 33.73449, loss = 31636.834, delta_loss = 34.10374, learn_rate = 0.001
+35 29897.395
+[DEBUG] RSTE iter 36: errs = 29864.562, delta_errs = 32.832314, loss = 31603.682, delta_loss = 33.151283, learn_rate = 0.001
+36 29864.562
+[DEBUG] RSTE iter 37: errs = 29832.568, delta_errs = 31.99449, loss = 31571.416, delta_loss = 32.26549, learn_rate = 0.001
+37 29832.568
+[DEBUG] RSTE iter 38: errs = 29801.365, delta_errs = 31.202414, loss = 31539.986, delta_loss = 31.429134, learn_rate = 0.001
+38 29801.365
+[DEBUG] RSTE iter 39: errs = 29770.904, delta_errs = 30.461481, loss = 31509.342, delta_loss = 30.646236, learn_rate = 0.001
+39 29770.904
+[DEBUG] RSTE iter 40: errs = 29741.143, delta_errs = 29.76168, loss = 31479.434, delta_loss = 29.907335, learn_rate = 0.001
+40 29741.143
+[DEBUG] RSTE iter 41: errs = 29712.04, delta_errs = 29.10396, loss = 31450.22, delta_loss = 29.21266, learn_rate = 0.001
+41 29712.04
+[DEBUG] RSTE iter 42: errs = 29683.557, delta_errs = 28.48247, loss = 31421.664, delta_loss = 28.55654, learn_rate = 0.001
+42 29683.557
+[DEBUG] RSTE iter 43: errs = 29655.66, delta_errs = 27.896378, loss = 31393.727, delta_loss = 27.937742, learn_rate = 0.001
+43 29655.66
+[DEBUG] RSTE iter 44: errs = 29628.318, delta_errs = 27.34193, loss = 31366.375, delta_loss = 27.35253, learn_rate = 0.001
+44 29628.318
+[DEBUG] RSTE iter 45: errs = 29601.5, delta_errs = 26.817698, loss = 31339.574, delta_loss = 26.799229, learn_rate = 0.001
+45 29601.5
+[DEBUG] RSTE iter 46: errs = 29575.18, delta_errs = 26.321041, loss = 31313.299, delta_loss = 26.275154, learn_rate = 0.001
+46 29575.18
+[DEBUG] RSTE iter 47: errs = 29549.328, delta_errs = 25.850426, loss = 31287.521, delta_loss = 25.77861, learn_rate = 0.001
+47 29549.328
+[DEBUG] RSTE iter 48: errs = 29523.926, delta_errs = 25.40386, loss = 31262.213, delta_loss = 25.307533, learn_rate = 0.001
+48 29523.926
+[DEBUG] RSTE iter 49: errs = 29498.945, delta_errs = 24.979895, loss = 31237.354, delta_loss = 24.86036, learn_rate = 0.001
+49 29498.945
+[DEBUG] RSTE iter 50: errs = 29474.37, delta_errs = 24.57694, loss = 31212.918, delta_loss = 24.435423, learn_rate = 0.001
+50 29474.37
+[DEBUG] RSTE evaluate test data ... 
+QTD Ratings menores que 10 9205
+QTD Ratings maiores que 10 e menotes que 100 39624
+QTD Ratings maiores que 100 17653
+RSTE: 0,991,1,262,1,145,0,993,0,904,1,421,1,270,1,151,0,248,0,981	Time: 07:31:23, 00:00	View: all
+[DEBUG] Learned models are saved to folder "Results\RSTE\"
+[INFO ] RSTE,0,991,1,262,1,145,0,993,0,904,1,421,1,270,1,151,0,248,0,981,0.001,0.001,0.001,10,50,false,0.0,07:31:23,00:00
+
+conjunto 5
+
+Training: ...c\dadosTreinamento\treinamento5.txt, Testing:: ...brec\dadosTreinamento\conjunto5.txt.
+RSTE,0,994,1,261,1,149,0,998,0,899,1,422,1,270,1,142,0,248,0,977,0.001,0.001,0.001,10,50,false,0.0,04:04:34,00:00
+

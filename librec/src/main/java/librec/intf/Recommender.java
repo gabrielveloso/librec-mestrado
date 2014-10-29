@@ -474,6 +474,10 @@ public abstract class Recommender implements Runnable {
 			sum_asyms += Measures.ASYMMLoss(rate, pred, minRate, maxRate);
 			numCount++;
 		}
+		
+		System.out.println("QTD Ratings menores que 10 " + numCount1);
+		System.out.println("QTD Ratings maiores que 10 e menotes que 100 "+numCount2);
+		System.out.println("QTD Ratings maiores que 100 "+numCount3);
 
 		double mae = sum_maes / numCount;
 		double rmse = Math.sqrt(sum_mses / numCount);
